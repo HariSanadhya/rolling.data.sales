@@ -11,11 +11,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Session Information
-```{r echo=FALSE}
-sessionInfo()
-```
-
 
 # Rolling Data Sales - examine housing sales data set of Brooklyn 
 
@@ -40,4 +35,11 @@ Using the Rolling Data Sales website, download and examine housing sales data se
   3. paper/patterns.md:- This file contains the result of the analysis and information regarding meaningful patterns observed during analysis.
 
   4. README.md:- This file includes an explanation of the purpose of the project and the other files.
+
+
+
+# Session Information
+```{r echo=FALSE}
+sessionInfo()
+```
 
