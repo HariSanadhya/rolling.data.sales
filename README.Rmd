@@ -1,0 +1,43 @@
+---
+title: "README"
+author: "Hari Narayan Sanadhya"
+date: "February 14, 2017"
+output: 
+  md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Session Information
+```{r echo=FALSE}
+sessionInfo()
+```
+
+
+# Rolling Data Sales - examine housing sales data set of Brooklyn 
+
+## Project Purpose
+Using the Rolling Data Sales website, download and examine housing sales data set of Brooklyn. This include cleansing of the data and then analyse it.
+
+## Project Folder and File structure
+* Folders:- 
+
+  1. Source Directory:- This folder contains the R source code used to analyze the Rolling Sales Data.
+
+  2. Data:- This folder contains the original data downloaded from the Rolling Data Sales website.
+
+  3. Paper:- This folder contains file that explains the result of the analysis and information regarding any meaningful pattern observed during analysis.
+
+* Files:-
+
+  1. source/R_rollingsales_brooklyn.R:- R code that reads the dataset present in the data folder and perfrom analysis on it.
+
+  2. data/rollingsales_brooklyn.csv:- The original data file downloaded from the Rolling Data Sales website.
+
+  3. paper/patterns.md:- This file contains the result of the analysis and information regarding meaningful patterns observed during analysis.
+
+  4. README.md:- This file includes an explanation of the purpose of the project and the other files.
+
