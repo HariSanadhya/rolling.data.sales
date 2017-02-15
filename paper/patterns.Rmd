@@ -1,0 +1,17 @@
+---
+title: "patterns"
+author: "Hari Narayan Sanadhya"
+date: "February 14, 2017"
+output: 
+  md_document:
+    variant: markdown_github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Patterns Noticed:-
+There are 24630 obsservations in the dataset with 24 different measurements recorded for each of the observation. All the records belong to the same borough i.e. 3. All the properties are from 60 different neighborhoods apart from 37 entries having blank neighborhoods. There are 44 different building class categories including commercial, residential and government buildings as well as vacant land areas. The buildings build year range from 1800 to 2016 which means dataset has a good representation of the population. 
+
+The sale price varies from 1 to 345000000 with the third quadrant value as 1196000. This means the data is extremely right skewed (or contains outliers) with respect to sale price so visual representation of the sale price as histogram gives just a single bar to the left most side. In order to get the proper visual representation of the data, the range needs to be reduced and since the sale price is positive, the logarithm transformation of the data proves to be an ideal solution. From the plot of logarithm of gross.sqft vs logarithm of sale.price.n, its observed that most of the buildings are within the 1000 to 10000 sqft area but the logarithm of price for the same, range from almost 0 till 6.5. This means that the data contains some records which are not actually sale data. So when we filter out the data which not likely represent the sales data and replot logarithm of gross.sqft vs logarithm of sale.price.n just for family homes data, most of the homes sold were having logarithm of area between 2.8 till 3.75 with logarithm of price ranging between 5 to 7. 
