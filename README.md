@@ -21,11 +21,13 @@ Project Folder and File structure
 
 1.  source/R\_rollingsales\_brooklyn.R:- R code that reads the dataset present in the data folder and perfrom analysis on it.
 
-2.  data/rollingsales\_brooklyn.csv:- The original data file downloaded from the Rolling Data Sales website.
+2.  data/rollingsales\_brooklyn.xls:- The original data file downloaded from the Rolling Data Sales website.
 
-3.  paper/patterns.md:- This file contains the result of the analysis and information regarding meaningful patterns observed during analysis.
+3.  data/rollingsales\_brooklyn.csv:- The csv data file generated from the original downloaded file from the Rolling Data Sales website. ONly the type of the file changed, no other changes made.
 
-4.  README.md:- This file includes an explanation of the purpose of the project and the other files.
+4.  paper/patterns.md:- This file contains the result of the analysis and information regarding meaningful patterns observed during analysis.
+
+5.  README.md:- This file includes an explanation of the purpose of the project and the other files.
 
 Session Information
 ===================

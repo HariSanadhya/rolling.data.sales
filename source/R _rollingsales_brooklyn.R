@@ -15,7 +15,7 @@ setwd("C:/Users/Neetu Hari/Desktop/SMU/2017-01-08 MSDS 6306 - Doing Data Science
 # bk <- read.xls("rollingsales_brooklyn.xls",pattern="BOROUGH", perl = "C:/Strawberry/perl/bin/perl.exe")
 
 # So, save the file as a csv and use read.csv instead
- bk <- read.csv("rollingsales_brooklyn.csv",skip=4,header=TRUE)
+bk <- read.csv("rollingsales_brooklyn.csv",skip=4,header=TRUE)
 
 ## Check the data
 head(bk)
@@ -29,6 +29,7 @@ str(bk) # Very handy function!
 # We create a new variable that is a "clean' version of sale.price.
 # And sale.price.n is numeric, not a factor.
 bk$SALE.PRICE.N <- as.numeric(gsub("[^[:digit:]]","", bk$SALE.PRICE))
+
 count(is.na(bk$SALE.PRICE.N))
 
 names(bk) <- tolower(names(bk)) # make all variable names lower case
